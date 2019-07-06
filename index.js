@@ -55,7 +55,7 @@ function removeFromCart(item) {
   var j = 0
 
   for (let i = 0; i < cart.length; i++) {
-    if(item == cart[i].itemName) {
+    if(item === new String(cart[i].itemName)) {
       cart.splice(i, 1)
     } else {
       j++
